@@ -20,11 +20,11 @@ if __name__ == "__main__":
     root_dir = get_repository_root()
     INFILE = root_dir / "data" / "ex_5_2-data.csv"
     OUTFILE = root_dir / "outputs" / "ex_5_2-processed.csv"
-    raw_data = np.loadtxt(INFILE)
+    raw_data = np.loadtxt(INFILE, delimiter=',')
     raw_data-=raw_data.mean()
     nana=raw_data.std()
     processed=raw_data/nana
-    np.savetxt(OUTFILE, processed, fmt='%.2e')
+    np.savetxt(OUTFILE, processed, delimiter=',')
 
 
     # Complete the data processing steps using numpy here.
