@@ -13,6 +13,7 @@ try:
 except ImportError:
     from util import get_repository_root
 
+
 if __name__ == "__main__":
 
     # Use these predefined input / output files
@@ -27,9 +28,3 @@ if __name__ == "__main__":
     processed = data
     # Save the output to OUTFILE using numpy routines.
     np.savetxt(OUTFILE, processed, delimiter=',')
-
-
-
-    # Complete the data processing steps using numpy here.
-
-    # Save the output to OUTFILE using numpy routines.
