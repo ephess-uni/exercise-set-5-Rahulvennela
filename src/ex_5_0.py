@@ -2,7 +2,11 @@
 
 
 def line_count(infile):
-    pass
+    file=open(infile)
+    sum=0
+    for i in file:
+        sum+=1
+    print(sum)
 
 
 if __name__ == "__main__":
